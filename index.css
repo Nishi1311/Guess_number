@@ -1,0 +1,80 @@
+.flex-div{
+    display: flex;
+    justify-content: space-around;
+
+}
+.flex-div-main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.flex-div----main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:0.5rem;
+    flex-direction: column;
+    
+    margin-top: 2rem;
+    
+    
+    
+    
+
+}
+
+.div-flex{
+    width: 8rem;
+    height: 8rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.flex-div---main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+   
+
+}
+.flex-div--main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+
+}
+
+
+.btnn{
+    width: 7rem;
+    height: 3rem; 
+    color: gray;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: beige;
+    border: 1px solid black;
+   
+}
+.btnn:hover,.btnn:active{
+    font-size: 1.5rem;
+    color: black;
+    background-color: aquamarine;
+    
+
+}
+@media screen and(max-width: 300px) {
+
+  
+}
