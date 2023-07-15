@@ -1,11 +1,12 @@
 let score=20;
 let highScore=0
-document.querySelector('para-div--main').textContent=score;
-document.querySelector('para-div---main').textContent=highScore;
+document.querySelector('.para-div--main').textContent=score;
+document.querySelector('.para-div---main').textContent=highScore;
 
 
 let randomnumber=Math.trunc(Math.random()*20)+1;
 document.querySelector('.btn').addEventListener('click', function () {
+    console.log('btn clicked')
     let guess=Number(document.querySelector('.input-div').value)
     if(!guess){
         document.querySelector('.para').textContent='No number found';
@@ -39,7 +40,7 @@ document.querySelector('.btn').addEventListener('click', function () {
         document.querySelector('body').style.backgroundColor='green';
         if(score>highScore){
             highScore=score;
-            document.querySelector('para-div---main').textContent=highScore;
+            document.querySelector('.para-div---main').textContent=highScore;
         }
         
     }
@@ -51,19 +52,23 @@ document.querySelector('.btn').addEventListener('click', function () {
        
       
        
-       
-
-    
-    
 })
 document.querySelector('.btn1').addEventListener('click', function () {
     randomnumber=Math.trunc(Math.random()*20)+1;
     score=20;
-    document.querySelector('para-div--main').textContent=score;
- 
+    document.querySelector('.para-div--main').textContent=score;
     document.querySelector('.input-div').value='';
     document.querySelector('body').style.backgroundColor='white';
     document.querySelector('.div1').textContent='?';
     document.querySelector('.para').textContent='Start guessing...';
 
 })
+ //scroll reveal start
+ ScrollReveal({ 
+    //reset: true,
+     distance:'80px',
+     duration:2000,
+     delay:200
+   });
+   ScrollReveal().reveal('.btn1,.para', {origin:'right' });
+   ScrollReveal().reveal('.box', {origin:'left' });

@@ -1,7 +1,28 @@
 .flex-div{
     display: flex;
     justify-content: space-around;
+    
 
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(green,pink);
+}
+.flex-div-main h1{
+    font-size: 1.5rem;
+    animation: floatImage 4s ease-in-out infinite;
+  }
+  @keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 .flex-div-main{
     display: flex;
@@ -60,10 +81,10 @@
 .btnn{
     width: 7rem;
     height: 3rem; 
-    color: gray;
+    color: white;
     font-size: 1rem;
     cursor: pointer;
-    background-color: beige;
+    background:linear-gradient(blue,skyblue);
     border: 1px solid black;
    
 }
@@ -74,7 +95,20 @@
     
 
 }
-@media screen and(max-width: 300px) {
-
+.box p{
+    font-weight: bold;
+}
+@media(max-width: 330px) {
+.flex-div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   
 }
+@media(max-width: 285px) {
+    .flex-div-main h1{
+      font-size: 1.5rem;
+    }
+      
+    }
