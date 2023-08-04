@@ -35,7 +35,7 @@ document.querySelector('.btn').addEventListener('click', function () {
     }
     else if(guess===randomnumber){
         if(score>0){
-        document.querySelector('.para').textContent='congo! you finally guessed the number ';
+        document.querySelector('.para').textContent='congo! you guessed the number ';
         document.querySelector('.div1').textContent=guess;
         document.querySelector('body').style.backgroundColor='green';
         if(score>highScore){

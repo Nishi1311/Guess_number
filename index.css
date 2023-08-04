@@ -73,6 +73,7 @@ body{
     justify-content:center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     gap:2rem;
 
 }
@@ -98,6 +99,12 @@ body{
 .box p{
     font-weight: bold;
 }
+@media(max-width: 493px) {
+    .flex-div--main h2{
+        font-size: 1rem;
+    }
+      
+    }
 @media(max-width: 330px) {
 .flex-div{
     flex-direction: column;
